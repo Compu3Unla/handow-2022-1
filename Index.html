@@ -10,6 +10,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+	<!---carrousel--->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/themes/splide-sea-green.min.css">
+
 </head>
 	
 <header>
@@ -51,41 +55,44 @@
 	
 	
 <body>
-	<!-----Botones------>
+	<!-----Botones iniciales------>
+	
 	<div class="Inicio">
 		<div class= "FraseInicial">
 			<section class="R">Registrarse</section>
 			<section class="IS">Inicio sesión</section>
 		</div>
 		
+	<!-----Carrousel 01------>
 	</div>
 	<div class="lonuevo">
 		<h2>Lo nuevo esta semana</h2>
 	</div>
-	
-	
-		<div class="content">
-			<h3>Remera salvadora</h3>
-			<p>Casi nueva, lista para usar con cualquier combinaci&oacute;n</p>
+	<section class="splide" aria-label="Splide Basic HTML Example">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide"><div class="splide_img"><img src="img/ropa/buzo_negro.png" width="250px" alt="Buzo negro básico"></div><div class="Splide_Text"><h3>Buzo Negro</h3><p>Siempre confiable, va con todo</p><h7>$1000</h7></div></li>
+				<li class="splide__slide"><img src="img/ropa/Buzo_RojGris.jpg" width="250px" alt="Buzo diagonales rojo,blanco,gris"><div class="Splide_Text"><h3>Buzo Bauhaus</h3><p>Pocos usos, pero super c&oacute;modo</p><h7>$1200</h7></div></li>
+				<li class="splide__slide"><img src="img/ropa/buzo_magic.png" width="250px" alt="Buzo negro magixc"><div class="Splide_Text"><h3>Buzo Magic</h3><p>Estilo top, re facherito</p><h7>$800</h7></div></li>
+				
+			</ul>
 		</div>
-	</div>
-
+	</section>
 	
-
+	<!-----Separador------>
 	<div class="Separador4C">
 		<h4>Realmente creemos que el cambio empieza con cada uno de nosotrxs, si queres saber como seguir ayudando al planeta en el que vivimos</h4>
 		<a target="blank" href="https://t.me/wallyandm">Dale click acá y enterate!</a>
 	</div>
 	
 	
-	
-	
-	
-	
+	<!-----Carrousel 02------>
 	<div>
 		<h2>Para vos</h2>
 		<p>INSERT CARROUSSEL</p>
 	</div>
+	
+	
 	<footer>
 		<div class="RedeS">
 			<img src="img/Icon_FB.png" alt="Facebook">
@@ -97,5 +104,18 @@
 			<img src="img/Logo_Handow_Footer.png" alt="Logo Handow">
 		</div>
 	</footer>
+	
+	<!----carrousel Script----->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
+				<!---Estilo---->
+	<script>
+		var splide = new Splide( '.splide', {
+			type    : 'loop',
+			perPage : 3,
+			autoplay: true,
+		} );
+
+splide.mount();
+</script>
 </body>
 </html>
