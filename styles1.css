@@ -272,14 +272,19 @@ header h2{
 }
 
 /*--------CARDS---------*/
+.splide__slide{
+	width: 50px;
+}
 
 .site-container{
+	width: 270px;
 	margin: 2rem auto;
-	max-width: calc(100% - 80px);
+	max-width: calc(100% - 100px);
 }
 .article-container{
+	width: 270px;
 	display:grid;
-	columns: 265px;
+
 }
 .article.image{
 	margin:0;
@@ -305,7 +310,7 @@ header h2{
 	padding:0.5rem 2rem;
 }
 .article-content .card-category {
-	font-size:0.875rem;
+	font-size:0.775rem;
 	text-transform:uppercase;
 	letter-spacing:0.1em;
 	font-weight:600;
