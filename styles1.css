@@ -106,6 +106,7 @@ header h2{
 
 /*-------botonera----------*/
 .navbar{
+	position: -webkit-sticky;
 	position:sticky;
 	top: 0px;
 	padding-bottom: 15px;
@@ -271,38 +272,74 @@ header h2{
 }
 
 /*--------CARDS---------*/
-.splide{
-	
-height: 460px;
-}
 
-.Splide_Text{
-	margin: -60px 0 0 0;
-	border-radius:0 0 30px 30px;
-	height: 120;
-	width: 200px;
-	display:flex;
-	flex-direction: column;
-	background-color:#003366;
+.site-container{
+	margin: 2rem auto;
+	max-width: calc(100% - 80px);
 }
-.Splide_Text h3{
-	padding-top: 60px;
+.article-container{
+	display:grid;
+	columns: 265px;
 }
-
-.splide__slide{
-	width: 460px;
-	height: 350px;
-	border-radius: 100px;
+.article.image{
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+}
+.article-image img{
+	max-width: 100%;
+	height: auto;
+	border-radius:20px 20px 0 0;
+}
+.article-card{
+	background:white;
+	border-radius:25px;
+	transition:0.3s;
+	padding-bottom: 1rem;
+}
+.article-card:hover{
+	box-shadow: 0 4px 20px 0 rgba(34,68,123,0.2);
+	cursor:pointer;
+}
+.article-content{
+	padding:0.5rem 2rem;
+}
+.article-content .card-category {
+	font-size:0.875rem;
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+	font-weight:600;
+	color:#6b82a7;
+	display:block;
+	text-decoration:none;
+}
+.article-content .card-title{
+	margin: -0.2rem 0;
+	color: #003366;
+}
+.article-content .card-excerpt{
+	font-size: 1rem;
+	line-height:1.5rem;
+	color: #6b82a7;
+	margin:0;
+}
+.article-content .card-talle{
+	background-color: #003366;
 	color:#FFFFFF;
+	padding: 0 10px;
+	border-radius: 100px;
+	
 }
-.splide_img{
-	background-size: contain;
+
+.article-content .card-precio{
+	border: 2px solid #003366;
+	color:#04293A;
+	padding: 0 10px;
+	border-radius: 100px;
+	float: right;
+
 }
-.splide__slide img{
-	height: 230px;
-	width: 200px;
-	border-radius: 40px 40px 25px 25px;
-}
+
 /*--------footer----------*/
 
 footer{
