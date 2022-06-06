@@ -34,7 +34,7 @@ terciario100:#009966
 terciario200:#006633
 --------------*/
 
-/*---------opening---------*/
+/*---------OPENING---------*/
 
 .FApertura{
 	margin-bottom: -10px;
@@ -62,7 +62,8 @@ header h2{
 	color:#FFFFFF;
 }
 
-/*--------Botones--Inicio-Register---------*/
+/*--------BOTONES--INICIO-REGISTRO---------*/
+
 .Inicio{
 	position:absolute;
 	width: 500px;
@@ -104,7 +105,7 @@ header h2{
 	cursor: pointer;
 }
 
-/*-------botonera----------*/
+/*-------BOTONERA---------*/
 .navbar{
 	position: -webkit-sticky;
 	position:sticky;
@@ -181,7 +182,8 @@ header h2{
 		background: #04293A;
 	}
 
-/*-----------hamburguesa-----------*/
+/*-----------HAMBURGUESA-----------*/
+
 #menu__toggle {
 	opacity: 0;
 }
@@ -272,6 +274,7 @@ header h2{
 }
 
 /*--------CARDS---------*/
+
 .splide__slide{
 	width: 50px;
 }
@@ -332,7 +335,7 @@ header h2{
 	background-color: #003366;
 	color:#FFFFFF;
 	padding: 0 10px;
-	border-radius: 100px;
+	border-radius: 200px;
 	
 }
 
@@ -345,7 +348,45 @@ header h2{
 
 }
 
-/*--------footer----------*/
+.article-content .card-precio:hover{
+	border: 2.8px solid #003366;
+	font-weight: 600;
+}
+
+.article-content .card-talle:hover{
+	font-weight: 600;
+}
+
+.article-content .card-title:hover{
+	padding-left:3px;
+	border-radius: 50px;
+}
+
+/*---------SEPARADOR-4C-------*/
+.separador-4c{
+	width: 1150px;
+	padding: 20px 30px;
+	text-align: center;
+	background-color: #003399;
+	border-radius: 100px;
+	color: #FFFFFF;
+	text-decoration:none;
+	line-height: 1.4em;
+}
+.separador-4c h4{
+	font-weight:400;
+	font-size: 1.1em;
+}
+.linkk {
+	color: #FFFFFF;
+	font-size: 1.18em;
+} 
+.linkk:hover {
+	color: #FF9933;
+} 
+
+
+/*--------FOOTER---------*/
 
 footer{
 	height:80px;
