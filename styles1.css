@@ -38,15 +38,15 @@ terciario200:#006633
 
 .FApertura{
 	margin-bottom: -10px;
+
 }
 h1{
 	text-align: center;
 	line-height: 33px;
 	width: 500px;
 	position: absolute;
-	top: 400px;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 350px;
+	left: 16em;
 	color:#FFFFFF;
 }
 
@@ -56,19 +56,26 @@ header h2{
 	line-height: 33px;
 	width: 500px;
 	position: absolute;
-	top: 500px;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 450px;
+	left: 21.5em;
 	color:#FFFFFF;
 }
 
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url("img/BIGHERO.png");
+	background-size: cover;
+}
 /*--------BOTONES--INICIO-REGISTRO---------*/
 
 .Inicio{
 	position:absolute;
 	width: 500px;
 	top:630px;
-	left:520px;
+	align-self: center;
+
 }
 
 .FraseInicial{
@@ -85,7 +92,6 @@ header h2{
 	border-radius: 50px;
 	border-color: #FFCC99;
 	color:#FFCC99;
-	
 }
 .IS{
 	text-align: center;
@@ -94,11 +100,11 @@ header h2{
 	border: 3px solid;
 	border-radius: 50px;
 	border-color: #FFCC99;
-	color:#FFCC99
+	color:#FFCC99;
 }
 
 .FraseInicial :hover {
-	border: 4px solid;
+	border: 3.5px solid;
 	border-color: #FF9933;
 	color:#FF9933;
 	font-weight:700;
@@ -109,13 +115,8 @@ header h2{
 .navbar{
 	position: -webkit-sticky;
 	position:sticky;
-	top: 0px;
-	padding-bottom: 15px;
-	border-width: 5px;
-	background-color: #FFCC99;
-	display: flex;
-	flex-direction:column;
-	justify-content: center;
+	top:0px;
+	
 }
 
 * {box-sizing: border-box;}
@@ -124,6 +125,7 @@ header h2{
 	overflow: hidden;
 	background-color: #FFFFFF;
 	margin:0px;
+	padding-top: 10px;
 }
 
 .topnav a {
@@ -203,12 +205,12 @@ header h2{
 }
 .menu__btn {
 	position: fixed;
-	top: 20px;
+	top: 32px;
 	right: 20px;
 	width: 26px;
 	height: 26px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 305;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -230,6 +232,7 @@ header h2{
 	
 }
 .menu__box {
+	z-index: 300;
 	display: block;
 	position: fixed;
 	top: 0;
@@ -273,33 +276,82 @@ header h2{
 	padding-left:20px;
 }
 
+/*-separador palabras--*/
+
+
+h2 {
+	font-size: 1.35em;
+	font-weight: 300;
+	color:#003399;
+	margin-top: 30px;
+	text-align: center;
+	border-bottom: 3px;
+}
+h2.linea {
+	position: relative;
+	z-index: 1;
+}
+h2.linea:before {
+	border-top: 2px solid #003399;
+	content: "";
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 95%;
+	z-index: -1;
+}
+
+h2.linea span {
+	border:3px solid;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-radius:30px;
+	background: #ffffff;
+	padding: 0 15px;
+}
+
+h2:hover{
+	color:#FF9933;
+	transition-duration: .25s;
+}
 /*--------CARDS---------*/
+
+.splide{
+	z-index: 100;
+}
 
 .splide__slide{
 	width: 50px;
 }
 
 .site-container{
+
 	width: 270px;
 	margin: 2rem auto;
 	max-width: calc(100% - 100px);
 }
 .article-container{
+	
 	width: 270px;
 	display:grid;
 
 }
 .article.image{
+	
 	margin:0;
 	padding: 0;
 	overflow: hidden;
 }
 .article-image img{
 	max-width: 100%;
-	height: auto;
 	border-radius:20px 20px 0 0;
 }
 .article-card{
+	height: 500px;
 	background:white;
 	border-radius:25px;
 	transition:0.3s;
@@ -362,6 +414,20 @@ header h2{
 	border-radius: 50px;
 }
 
+.splide__arrow svg{
+	fill:#003399 !important;
+}
+
+.splide__arrow:hover:not(:disabled) svg{
+	fill: #FF3399 !important;
+}
+
+.splide__pagination__page.is-active{
+	background: #003399!important;
+}
+.splide__pagination__page:hover{
+	background: #FF3399 !important;
+}
 /*---------SEPARADOR-4C-------*/
 .separador-4c{
 	width: 1150px;
@@ -372,6 +438,7 @@ header h2{
 	color: #FFFFFF;
 	text-decoration:none;
 	line-height: 1.4em;
+	align-self: center;
 }
 .separador-4c h4{
 	font-weight:400;
@@ -385,6 +452,21 @@ header h2{
 	color: #FF9933;
 } 
 
+/*----CARDS------*/
+
+.site-container2{
+	width:auto;
+	margin: 2rem 1rem;
+	max-width:calc(100% - 100px);
+}
+.article-container2{;
+	display:grid;
+	grid-template-columns: 270px 270px 270px 270px 270px;
+	gap:1.5rem;
+}
+.splide__slide2{
+	
+}
 
 /*--------FOOTER---------*/
 

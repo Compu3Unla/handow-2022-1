@@ -17,37 +17,39 @@
 	
 <header>
 	<div class="FApertura">
-		<img src="img/BIGHERO.png" width="100%" alt="Bienvenida a la página">
+		<!--<img src="img/BIGHERO.png" width="100%" alt="Bienvenida a la página">-->
+		<section class="banner"></section>
 		<h1>Con Handow ayudas a reducir el consumo y desecho de las prendas de ropa</h1>
 		<h2> ¿Te animas a ver m&aacute;s?</h2>
-	</div>
-	<div class="topnav">
-			<a class="active" href="#home"><img src="img/Red_Logo_Handow_A.png" width="50px" alt="Reducción del logo Handow"></a>
-			<a href="#about"><img src="img/FotoPerf.png" width="35px" alt="foto de perfil"></a>
-			<a href="#contact"><img src="img/Notif_V.png" width="35px" alt="notificación"></a>
-		<div class="search-container">
+	<div class="topbar">
+		<div class="topnav">
+				<a class="active" href="#home"><img src="img/Red_Logo_Handow_A.png" width="50px" alt="Reducción del logo Handow"></a>
+				<a href="#about"><img src="img/FotoPerf.png" width="35px" alt="foto de perfil"></a>
+				<a href="#contact"><img src="img/Notif_V.png" width="35px" alt="notificación"></a>
+			<div class="search-container">
 				<form action="/action_page.php">
 					<input type="text" placeholder="Búsqueda..." name="search">
 					<button type="submit"><img src="img/Busqueda_GR.png" width="15px" alt="busqueda"><i class="fa fa-search"></i></button>
 				</form>
+			</div>
 		</div>
-		
+	</div>
 		<!-------------HAMBURGUESA---------------->
 		
 		<div class="hamburger-menu">
-			<input id="menu__toggle" type="checkbox" />
-		<label class="menu__btn" for="menu__toggle">
-				<span></span>
+				<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+					<span></span>
 			</label>
-		<ul class="menu__box">
-				<li><a class="menu__item" href="#"><img src="img/FotoPerf.png" width="30px" alt="foto de perfil"><p>Mi perfil</p></a></li>
-				<li><a class="menu__item" href="#"><img src="img/archiv_V.png" width="30px" alt="Icon Archivo"><p>Archivo</p></a></li>
-				<li><a class="menu__item" href="#"><img src="img/conoce_V.png" width="30px" alt="icon conocé"><p>Conoc&eacute; m&aacute;s</p></a></li>
-				<li><a class="menu__item" href="#"><img src="img/dona.png" width="30px" alt="icon doná"><p>Don&aacute;</p></a></li>
-				<li><a class="menu__item" href="#"><img src="img/ayuda.png" width="30px" alt="icon ayuda"><p>Ayuda</p></a></li>
-				<li><a class="menu__item" href="#"><img src="img/preferences_V.png" width="30px" alt="icon preferencias"><p>Preferencias</p></a></li>
-				<li><a class="menu__item" href="#"><img src="img/LogOut.png" width="30px" alt="icon log out"><p>Cerrar Sesi&oacute;n</p></a></li>
-			</ul>
+				<ul class="menu__box">
+					<li><a class="menu__item" href="#"><img src="img/FotoPerf.png" width="30px" alt="foto de perfil"><p>Mi perfil</p></a></li>
+					<li><a class="menu__item" href="#"><img src="img/archiv_V.png" width="30px" alt="Icon Archivo"><p>Archivo</p></a></li>
+					<li><a class="menu__item" href="#"><img src="img/conoce_V.png" width="30px" alt="icon conocé"><p>Conoc&eacute; m&aacute;s</p></a></li>
+					<li><a class="menu__item" href="#"><img src="img/dona.png" width="30px" alt="icon doná"><p>Don&aacute;</p></a></li>
+					<li><a class="menu__item" href="#"><img src="img/ayuda.png" width="30px" alt="icon ayuda"><p>Ayuda</p></a></li>
+					<li><a class="menu__item" href="#"><img src="img/preferences_V.png" width="30px" alt="icon preferencias"><p>Preferencias</p></a></li>
+					<li><a class="menu__item" href="#"><img src="img/LogOut.png" width="30px" alt="icon log out"><p>Cerrar Sesi&oacute;n</p></a></li>
+				</ul>
 		</div>
 	</div>
 </header>
@@ -64,8 +66,8 @@
 		
 	<!-----Carrousel 01------>
 	</div>
-	<div class="lonuevo">
-		<h2>Lo nuevo esta semana</h2>
+	<div class="lo-nuevo">
+		<h2 class="linea"><span>Lo nuevo esta semana</span></h2>
 	</div>
 	<section class="splide" aria-label="Splide Basic HTML Example">
 		<div class="splide__track">
@@ -196,10 +198,10 @@
 	
 	<!-----Carrousel 02------>
 	<div class="para-vos">
-		<h2>Para vos</h2>
-				<li class="splide__slide">
-					<div class="site-container">
-						<div class="article-container">
+		<h2 class="linea"><span>Para vos</span></h2>
+				<li class="splide__slide2">
+					<div class="site-container2">
+						<div class="article-container2">
 								<article class="article-card">
 									<figure class="article-image">
 										<img src="img/ropa/camisola_modal.jpg" alt="Campera rosa y celeste" />
@@ -319,7 +321,7 @@
 								</article>
 								<article class="article-card">
 									<figure class="article-image">
-										<img src="img/ropa/" alt="Campera rosa y celeste" />
+										<img src="img/ropa/photo01.jpeg" alt="Campera rosa y celeste" />
 									</figure>
 									<div class="article-content">
 										<a href="#" class="card-category">Buzos</a>
@@ -331,7 +333,6 @@
 									</div>
 								</article>
 						</div>
-					
 					</div>
 				</li>
 	</div>
