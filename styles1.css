@@ -15,6 +15,8 @@ body{
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background: linear-gradient(#FFFFFF, #FFDFBF);
+	scroll-behavior: smooth;
 }
 /*--paleta DarkMode
 DarkMode_BG:#04293A
@@ -36,10 +38,6 @@ terciario200:#006633
 
 /*---------OPENING---------*/
 
-.FApertura{
-	margin-bottom: -10px;
-
-}
 h1{
 	text-align: center;
 	line-height: 33px;
@@ -50,82 +48,22 @@ h1{
 	color:#FFFFFF;
 }
 
-header h2{
-	font-weight:400;
-	text-align: center;
-	line-height: 33px;
-	width: 500px;
-	position: absolute;
-	top: 450px;
-	left: 21.5em;
-	color:#FFFFFF;
-}
-
-.banner{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background: url("img/BIGHERO.png");
-	background-size: cover;
-}
-/*--------BOTONES--INICIO-REGISTRO---------*/
-
-.Inicio{
-	position:absolute;
-	width: 500px;
-	top:630px;
-	align-self: center;
-
-}
-
-.FraseInicial{
-	display:flex;
-	align-items:center;
-	justify-content: center;
-
-}
-.R{
-	text-align: center;
-	margin: 0px 15px;
-	width: 150px;
-	border: 3px solid;
-	border-radius: 50px;
-	border-color: #FFCC99;
-	color:#FFCC99;
-}
-.IS{
-	text-align: center;
-	margin: 0px 15px;
-	width: 150px;
-	border: 3px solid;
-	border-radius: 50px;
-	border-color: #FFCC99;
-	color:#FFCC99;
-}
-
-.FraseInicial :hover {
-	border: 3.5px solid;
-	border-color: #FF9933;
-	color:#FF9933;
-	font-weight:700;
-	cursor: pointer;
+header{
+	background: #FFFFFF;
+	position: sticky;
+	top:0px;
+	z-index: 200;
+	box-shadow: -2px -2px 6px rgba(0, 0, 0, .4);
 }
 
 /*-------BOTONERA---------*/
-.navbar{
-	position: -webkit-sticky;
-	position:sticky;
-	top:0px;
-	
-}
 
 * {box-sizing: border-box;}
 
 .topnav {
-	overflow: hidden;
+	
 	background-color: #FFFFFF;
 	margin:0px;
-	padding-top: 10px;
 }
 
 .topnav a {
@@ -220,7 +158,7 @@ header h2{
 	width: 100%;
 	height: 2px;
 	background-color: #616161;
-	transition-duration: .25s;
+	transition-duration: .40s;
 }
 .menu__btn > span::before {
 	content: '';
@@ -237,19 +175,21 @@ header h2{
 	position: fixed;
 	top: 0;
 	right: -100%;
-	width: 270px;
-	height: 100%;
+	width: 300px;
+	height: 550px;
 	margin: 0;
-	padding: 60px 30px;
+	padding: 60px 0 60px 110px;
 	list-style: none;
 	background-color: #ECEFF1;
-	box-shadow: -2px -2px 6px rgba(0, 0, 0, .4);
-	transition-duration: .25s;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+	transition-duration: .40s;
+	border-radius: 6000px 0 0px 6000px;
 	
 }
-.menu__item{
+.menu__item {
 	text-align:center;
 	width: 100%;
+	height: 50px;
 	display: block;
 	padding: 12px 0px;
 	color: #04293A;
@@ -257,6 +197,7 @@ header h2{
 	font-weight: 600;
 	text-decoration: none;
 	transition-duration: .25s;
+	align-items: center;
 }
 
 .menu__item img, p{
@@ -276,14 +217,33 @@ header h2{
 	padding-left:20px;
 }
 
+.menu__item h9{
+	font-size: 0.6em;
+}
+/*------------------*/
+.open-page{
+	background-color: #FFDFBF;
+	height: 200px;
+	width: 100%;
+	align-self: center;
+}
+
+
 /*-separador palabras--*/
 
+
+.lo-nuevo{
+	margin-top: 20px;
+}
+.para-vos{
+	margin-top: 20px;
+}
 
 h2 {
 	font-size: 1.35em;
 	font-weight: 300;
 	color:#003399;
-	margin-top: 30px;
+	margin-top: 10px;
 	text-align: center;
 	border-bottom: 3px;
 }
@@ -322,6 +282,7 @@ h2:hover{
 
 .splide{
 	z-index: 100;
+	margin-top: -2em;
 }
 
 .splide__slide{
@@ -464,9 +425,8 @@ h2:hover{
 	grid-template-columns: 270px 270px 270px 270px 270px;
 	gap:1.5rem;
 }
-.splide__slide2{
-	
-}
+
+
 
 /*--------FOOTER---------*/
 
@@ -487,6 +447,7 @@ footer{
 footer img{
 	padding-left:10px;
 	padding-right:10px;
+	
 }
 footer p{
 	padding: 0px 80px;
@@ -498,6 +459,141 @@ footer p{
 
 .FootLogo{
 	left:40px; 
+}
+
+
+
+/*-------HTML INITIAL FIRST TIME-------*/
+.INITIAL{
+	background: url(https://i.pinimg.com/originals/2d/1e/71/2d1e71a7d70c4f7fe31cf1ff12cadb18.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+
+.FApertura h1{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	backdrop-filter: blur(5000px);
+	-webkit-backdrop-filter: blur(5000px);
+	box-shadow: 1px 4px 18px 10px rgba(00,00,00,0.3);
+	background: rgba(00,00,00,0.5);
+	border: 2px solid;
+	padding: 1em;
+	border-radius: 40px;
+}
+.anim-ver-mas{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	list-style: none;
+	text-decoration:none;
+}
+
+.cta{
+	display:flex;
+	align-items: center;
+	color: #FFFFFF;
+	background: none;
+	border:none;
+	padding:12px 18px;
+	text-shadow: 1px 4px 7px rgba(00,00,00,5);
+	position: relative;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+.cta:before {
+	content: "";
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%)
+		translateX(calc(30% + 4px));
+	width: 45px;
+	height: 45px;
+	background: #003366;
+	border-radius:70px;
+	transition: transform .25s .25s cubic-bezier(0, 0, .5,2), width .25s cubic-bezier(0, 0, .5, 2);
+	z-index: -1;
+	box-shadow: 0.8px 4px 10px rgba(0,0,0,1);
+}
+.cta:hover::before {
+	width: 100%;
+	transform:translateY(-50%)
+		translateX(-18px);
+	transition:transform .25s cubic-bezier(0, 0, .5, 2), width .25 .25s cubic-bezier(0, 0, .5, 2);
+	
+}
+.cta i {
+	margin-left: 5px;
+	transition: transform .25s .4s cubic-bezier(0, 0, .5, 2);
+}
+.cta:hover i{
+	transform: translateX(3px);
+	
+	
+}
+.Inicio{
+	width: 100%;
+	top:75%;
+	align-self: center;
+
+}
+header h2{
+	font-weight:400;
+	text-align: center;
+	line-height: 33px;
+	width: 500px;
+	position: absolute;
+	top: 57%;
+	color:#FFFFFF;
+}
+.FraseInicial{
+	text-shadow: 2px 5px 3px #000000;
+	font-size: 1.1em;
+}
+
+.R{
+	position: absolute;
+	top: 80%;
+	left: 55%;
+	-ms-transform: translate(-50%, -40%);
+	transform: translate(-50%, -40%);
+	text-align: center;
+	margin: 0px 15px;
+	width: 150px;
+	border: 3px solid;
+	border-radius: 50px;
+	border-color: #FFCC99;
+	color:#FFCC99;
+	box-shadow: 0.8px 4px 10px rgba(0,0,0,1);
+}
+.IS{
+	position: absolute;
+	top: 80%;
+	left: 55%;
+	-ms-transform: translate(-180%, -40%);
+	transform: translate(-180%, -40%);
+	text-align: center;
+	margin: 0px 15px;
+	width: 150px;
+	border: 3px solid;
+	border-radius: 50px;
+	border-color: #FFCC99;
+	color:#FFCC99;
+	box-shadow: 0.8px 4px 10px rgba(00,0,0,1);
+}
+
+.FraseInicial :hover {
+	border: 3.5px solid;
+	border-color: #FF9933;
+	color:#FF9933;
+	font-weight:700;
+	cursor: pointer;
+	
 }
 
 
