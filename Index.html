@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="es">
-<head>
+<html lang="es"><head>
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Maiten, B.">
@@ -10,28 +9,32 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+	
 	<!---carrousel--->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/themes/splide-sea-green.min.css">
 
 </head>
 	
-<header>
+<header id="home">
 	<div class="topbar">
 		<div class="topnav">
-				<a class="active" href="#home"><img src="img/Red_Logo_Handow_A.png" width="50px" alt="Reducción del logo Handow"></a>
-				<a href="#perfil"><img src="img/FotoPerf.png" width="35px" alt="foto de perfil"></a>
-				<a href="#notif">
+				<a target="_self" class="active" href="index.html"><img src="img/SVG/Iso_handow.svg" width="52px" alt="Reducción del logo Handow"></a>
+				<a target="_blank" href="#perfil"><img src="img/SVG/FotoPerf.svg" width="37px" alt="foto de perfil"></a>
+				<a target="_self" href="#notif">
 					<div class="icon-wrapper" data-number="1">
-						<img src="img/Notif_V.png" class="bell-icon" width="35px" alt="notificación">
+						<img src="img/SVG/Notif_V.svg" class="bell-icon" width="35px" alt="notificación">
 					</div>
 				</a>
 					
 			<div class="search-container">
 				<form action="/action_page.php">
 					<input type="text" placeholder="Búsqueda..." name="search">
-					<button type="submit"><img src="img/Busqueda_GR.png" width="15px" alt="busqueda"><i class="fa fa-search"></i></button>
+					<button type="submit"><img src="img/SVG/Busqueda_GR.svg" width="15px" alt="busqueda"><i class="fa fa-search"></i></button>
 				</form>
 			</div>
+		</div>
+		<div class="search-container-mobile">
+			<button type="button"><img src="img/SVG/Busqueda_GR.svg" width="15px" alt="busqueda"></button>
 		</div>
 		<!-------------HAMBURGUESA---------------->
 		<div class="hamburger-menu">
@@ -40,13 +43,13 @@
 					<span></span>
 			</label>
 				<ul class="menu__box">
-					<li><a class="menu__item" href="#perfil"><img src="img/FotoPerf.png" width="40px" alt="foto de perfil"><p>Mi perfil</p></a></li>
-					<li><a class="menu__item" href="#archivo"><img src="img/archiv_V.png" width="30px" alt="Icon Archivo"><p>Archivo</p></a></li>
-					<li><a class="menu__item" href="#conoce-mas-instance"><img src="img/conoce_V.png" width="30px" alt="icon conocé"><p>Conoc&eacute; m&aacute;s</p></a></li>
-					<li><a class="menu__item" href="#dona-instance"><img src="img/dona.png" width="30px" alt="icon doná"><p>Don&aacute;</p></a></li>
-					<li><a class="menu__item" href="#ayuda-instance"><img src="img/ayuda.png" width="30px" alt="icon ayuda"><p>Ayuda</p></a></li>
-					<li><a class="menu__item" href="#preferences-intance"><img src="img/preferences_V.png" width="30px" alt="icon preferencias"><p>Preferencias</p></a></li>
-					<li><a class="menu__item" href="#logout-instance"><img src="img/LogOut.png" width="30px" alt="icon log out"><p>Cerrar Sesi&oacute;n</p></a></li>
+					<li><a class="menu__item" href="#perfil"><img src="img/SVG/FotoPerf.svg" width="30px" alt="foto de perfil"><p>Mi perfil</p></a></li>
+					<li><a class="menu__item" href="#archivo"><img src="img/SVG/Archiv_V.svg" width="30px" alt="Icon Archivo"><p>Archivo</p></a></li>
+					<li><a class="menu__item" href="#conoce-mas-instance"><img src="img/SVG/conoce_V.svg" width="30px" alt="icon conocé"><p>Conoc&eacute; m&aacute;s</p></a></li>
+					<li><a class="menu__item" href="#dona-instance"><img src="img/SVG/dona.svg" width="30px" alt="icon doná"><p>Don&aacute;</p></a></li>
+					<li><a class="menu__item" href="#ayuda-instance"><img src="img/SVG/ayuda.svg" width="30px" alt="icon ayuda"><p>Ayuda</p></a></li>
+					<li><a class="menu__item" href="#preferences-intance"><img src="img/SVG/preferences_V.svg" width="30px" alt="icon preferencias"><p>Preferencias</p></a></li>
+					<li><a class="menu__item" href="#logout-instance"><img src="img/SVG/LogOut.svg" width="30px" alt="icon log out"><p>Cerrar Sesi&oacute;n</p></a></li>
 				</ul>
 		</div>
 	</div>
@@ -55,7 +58,7 @@
 	
 <body id="top">
 	<div class="open-page">
-		
+		<p>Que bueno volver a verte!</p>
 	</div>
 	<!-----Carrousel 01------>
  <div class="carrousel001">
@@ -76,7 +79,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo negro</h3>
 										<p class="card-excerpt">Confiable, va con todo</p>
-										<br>
 										<p class="card-talle">L</p>
 										<p class="card-precio">$800</p>
 									</div>
@@ -95,7 +97,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo Bauhaus</h3>
 										<p class="card-excerpt">Pocos usos, super c&oacute;modo</p>
-										<br>
 										<p class="card-talle">M</p>
 										<p class="card-precio">$1200</p>
 									</div>
@@ -114,7 +115,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo magic</h3>
 										<p class="card-excerpt">Estilo top, re facherito</p>
-										<br>
 										<p class="card-talle">S</p>
 										<p class="card-precio">$900</p>
 									</div>
@@ -133,7 +133,6 @@
 										<a href="#" class="card-category">Camperas</a>
 										<h3 class="card-title">Campera pelitos</h3>
 										<p class="card-excerpt">Abrigadisima, la use 3 veces.</p>
-										<br>
 										<p class="card-talle">L</p>
 										<p class="card-precio">$1100</p>
 									</div>
@@ -152,7 +151,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -171,12 +169,83 @@
 										<a href="#" class="card-category">Campera</a>
 										<h3 class="card-title">Campera Peluchito</h3>
 										<p class="card-excerpt">Me dejo de ir</p>
-										<br>
 										<p class="card-talle">S</p>
 										<p class="card-precio">$1300</p>
 									</div>
 								</article>
 						</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="site-container">
+						<div class="article-container">
+								<article class="article-card">
+									<figure class="article-image">
+										<img src="img/ropa/buzo_adiddas.jpg" alt="Buzo negro adiddas">
+									</figure>
+									<div class="article-content">
+										<a href="#" class="card-category">Buzos</a>
+										<h3 class="card-title">Buzo Adiddas</h3>
+										<p class="card-excerpt">Con un par de detalles en la capucha</p>
+										<p class="card-talle">M</p>
+										<p class="card-precio">$1100</p>
+									</div>
+								</article>
+							</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="site-container">
+						<div class="article-container">
+								<article class="article-card">
+									<figure class="article-image">
+										<img src="img/ropa/chaqueta_indians.png" alt="Chaqueta Indians">
+									</figure>
+									<div class="article-content">
+										<a href="#" class="card-category">Chaqueta</a>
+										<h3 class="card-title">Chaqueta Indians</h3>
+										<p class="card-excerpt">Varios usos, impecable</p>
+										<p class="card-talle">M</p>
+										<p class="card-precio">$1500</p>
+									</div>
+								</article>
+							</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="site-container">
+						<div class="article-container">
+								<article class="article-card">
+									<figure class="article-image">
+										<img src="img/ropa/vestido_cuadri.jpg" alt="Vestido cuadrillé">
+									</figure>
+									<div class="article-content">
+										<a href="#" class="card-category">Vestido</a>
+										<h3 class="card-title">Vestido ajedrez</h3>
+										<p class="card-excerpt">Impecable</p>
+										<p class="card-talle">S</p>
+										<p class="card-precio">$1100</p>
+									</div>
+								</article>
+							</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="site-container">
+						<div class="article-container">
+								<article class="article-card">
+									<figure class="article-image">
+										<img src="img/ropa/Camperas_Puffer.jpg" alt="Chaqueta Indians">
+									</figure>
+									<div class="article-content">
+										<a href="#" class="card-category">Campera</a>
+										<h3 class="card-title">Campera cuerina</h3>
+										<p class="card-excerpt">No me va</p>
+										<p class="card-talle">M</p>
+										<p class="card-precio">$1700</p>
+									</div>
+								</article>
+							</div>
 					</div>
 				</li>
 			</ul>
@@ -204,7 +273,7 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
+
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -217,7 +286,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -230,7 +298,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -243,7 +310,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -256,7 +322,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -269,7 +334,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -282,7 +346,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -295,7 +358,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -308,7 +370,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -321,7 +382,6 @@
 										<a href="#" class="card-category">Buzos</a>
 										<h3 class="card-title">Buzo diagonales rosita</h3>
 										<p class="card-excerpt">Dejo de ser mi estilo</p>
-										<br>
 										<p class="card-talle">XL</p>
 										<p class="card-precio">$700</p>
 									</div>
@@ -334,13 +394,13 @@
 	
 	<footer>
 	<div class="RedeS">
-			<a href="https://www.facebook.com/Meh.Wally/"><img src="img/Icon_FB.png" alt="Facebook"></a>
-			<a href="mailto:maitenbolano@gmail.com"><img src="img/Icon_Mail.png" alt="Email"> </a>
-			<a href="https://www.instagram.com/wallyandm/"><img src="img/Icon_IG.png" alt="Instagram"> </a>
+		<a target="_blank" href="https://www.facebook.com/Meh.Wally/"><img src="img/SVG/facebook.svg" width="40px" alt="Facebook"></a>
+		<a target="_blank" href="mailto:maitenbolano@gmail.com"><img src="img/SVG/email.svg" width="40px" alt="Email"> </a>
+			<a target="_blank" href="https://www.instagram.com/wallyandm/"><img src="img/SVG/instagram.svg" width="40px" alt="Instagram"> </a>
 		</div>
-			<p>Todos los derechos reservados.© Computación 3 T.N.</p>
+			<p>Todos los derechos reservados. ©2022 Handow</p>
 		<div class="FootLogo">
-			<a href="#top"><img src="img/Logo_Handow_Footer.png" alt="Logo Handow"></a>
+			<a target="_self" href="index.html"><img src="img/SVG/Handow_logoC.svg" width="250px" alt="Logo Handow"></a>
 		</div>
 	</footer>
 	
