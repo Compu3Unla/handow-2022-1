@@ -347,11 +347,11 @@ h2:hover{
 /*--------CARDS---------*/
 
 .splide{
-	left: 5%;
+	left: 8%;
 	right: 5%;
 	z-index: 100;
 	margin-top: -2em;
-	width:90% ;
+	width:80% ;
 }
 
 .splide__slide{
@@ -507,7 +507,6 @@ h2:hover{
 }
 
 
-
 /*--------FOOTER---------*/
 
 footer{
@@ -542,9 +541,116 @@ footer p{
 }
 
 
+@media screen and (max-width:1920px){
+	#lonuevo-mobile{
+		display: none;
+	}
+	.FApertura-mobile{
+		display: none;
+	}
+	.futer-mobile{
+		display: none;
+		visibility: hidden;
+	}
+}
+@media screen and (max-width:1440px){
+	#lonuevo-mobile{
+		display: none;
+	}
+	.splide{
+		left: 0.5%;
+		right: 0.5%;
+		z-index: 100;
+		margin-top: -2em;
+		width:99% ;
+	}
+	
+	.article-container2{;
+		display:grid;
+		grid-template-columns: 270px 270px 270px 270px;
+		gap:1.5rem;
+		width: 97vw;
+		place-content: center;
+	}
+	.futer-mobile{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+
+@media screen and (max-width:600px){
+	#lonuevo-desktop{
+		display: none;
+	}
+	#lonuevo-mobile{
+		display: inherit;
+	}
+	
+	.article-container2{
+		margin-left:-5px;
+		display:grid;
+		grid-template-columns: 270px 270px;
+		gap:1rem;
+		place-content: center;
+	}
+	
+	.separador-4c{
+		width: 600px;
+		padding: 20px 30px;
+		text-align: center;
+		background-color: #01363A;
+		border-radius: 0;
+		color: #FFFFFF;
+		text-decoration:none;
+		line-height: 1.4em;
+		align-self: center;
+	}
+	.separador-4c h4{
+		font-weight:400;
+		font-size: 1.1em;
+	}
+	.linkk {
+		color: #FFFFFF;
+		font-size: 1.18em;
+	} 
+	
+	header{
+		display: none;
+	}
+	.FApertura{
+		display: none;
+	}
+	.R{
+		top: 70% !important;
+		left: 45% !important;
+		border: 3px solid #01363a;
+		padding-bottom: 35px;
+		background: none !important;
+		color:#01363a!important;
+	}
+	
+	.IS{
+		padding: 5px 0 40px;
+		background-color: none;
+		top: 65% !important;
+		left: 77.5%!important;
+	}
+	.FApertura-mobile{
+		margin: 300px 60px;
+		display:inherit;
+		
+	}
+	.futer-mobile{
+		display: inherit;
+		visibility: inherit;
+	}
+}
+
+
 /*-------HTML INITIAL FIRST TIME-------*/
 .INITIAL{
-	background: url(https://i.pinimg.com/originals/2d/1e/71/2d1e71a7d70c4f7fe31cf1ff12cadb18.jpg) no-repeat center fixed;
+	background: linear-gradient(#a4dfff, #d8efff, #ffffff);;
 	background-size: cover;
 }
 
@@ -555,14 +661,11 @@ footer p{
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	backdrop-filter: blur(5000px);
-	-webkit-backdrop-filter: blur(5000px);
-	box-shadow: 1px 4px 18px 10px rgba(00,00,00,0.3);
-	background: rgba(00,00,00,0.5);
-	
 	padding: 1em;
+	border-bottom: 5px solid;
+	border-top: 5px solid;
 	border-radius: 40px;
-	color:#FFFFFF;
+	color:#10363a;
 	font-family: arck;
 	font-size: 3em;
 	text-align: center;
@@ -582,11 +685,11 @@ footer p{
 .cta{
 	display:flex;
 	align-items: center;
-	color: #FFFFFF;
+	color: #0000000;
 	background: none;
 	border:none;
 	padding:12px 15px;
-	text-shadow: 1px 4px 7px rgba(00,00,00,5);
+	text-shadow: 1px 4px 10px rgba(00,00,00,0.6);
 	position: relative;
 	cursor: pointer;
 	font-size: 1.2em;
@@ -599,11 +702,11 @@ footer p{
 		translateX(-15%);
 	width: 45px;
 	height: 45px;
-	border: 4px solid #01363A;
+	border: 4px solid #ffa141;
 	border-radius:70px;
 	transition: transform .25s .25s cubic-bezier(0, 0, .5,2), width .25s cubic-bezier(0, 0, .5, 2);
 	z-index: -1;
-	box-shadow: 0.8px 4px 10px rgba(0,0,0,1);
+	box-shadow: 0.8px 4px 10px rgba(0,0,0,0.3);
 }
 .cta:hover::before {
 	width: 100%;
@@ -674,20 +777,71 @@ header h2{
 }
 
 .FraseInicial :hover {
-	border-color: #dc6f00;
+	background-color: #ffffff;
+	color: #01363a;
 	font-weight:700;
 	cursor: pointer;
 	font-size: 1.04em;
 	height: 40px;
 }
 
+.FApertura-mobile p {
+	line-height: 0.9em;
+	width: 300px;
+	text-align: center;
+	margin: 25px auto;
+	font-size: 1.5em;
+	
+}
+
+
+.futer-mobile{
+	position: fixed;
+	bottom: 0vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height:80px;
+	width: 100%;
+	border-radius: 100px 100px 0 0;
+	box-shadow: -1px -1px 6px rgba(1, 54, 58, .1);
+	align-self: center;
+	background-color: #ffffff;
+
+}
+.botonlist-nav{
+	list-style: none;
+	display: flex;
+	column-gap: 90px;
+	margin-top: 145px!important;
+	margin: 130px
+}
+.nav__link{
+	display:inline-block;
+	text-decoration: none;
+	color: #01363a;
+	position: relative;
+}
+.nav__link::after{
+	content: '';
+	position: absolute;
+	left: 0;bottom:0;
+	width: 100%;height: 2px;
+	background: #01363a;
+	transform:scaleX(0);
+	transform-origin: right;
+	transition:transform 0.5s;
+}
+.nav__link:hover::after{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
 /*---------Vista INICIO SESION OTRO HTML-------*/
 
 .body-iniciosesion, .body-registro{
 	margin: 0;
-background: -webkit-linear-gradient(#a4dfff, #d8efff, #ffffff);
-background: -o-linear-gradient(#a4dfff, #d8efff, #ffffff);
-background: linear-gradient(#a4dfff, #d8efff, #ffffff);
+	background: linear-gradient(#a4dfff, #d8efff, #ffffff);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -735,6 +889,7 @@ background: linear-gradient(#a4dfff, #d8efff, #ffffff);
 	background: none;
 	padding: 15px 20px;
 	border-radius: 45px;
+	text-align: center;
 	cursor: pointer;
 }
 .body-iniciosesion .button:hover, .body-registro .button:hover{
@@ -759,7 +914,7 @@ background: linear-gradient(#a4dfff, #d8efff, #ffffff);
 	text-align: center;
 	line-height: 1.2em;
 	padding: 30px 20px;
-	text-shadow: 2px 3px 15px rgba(0, 0, 0, 100);
+	text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.50);
 	font-size: 1.5em;
 	margin-top: -250px;
 	margin-top:auto;
@@ -772,10 +927,9 @@ background: linear-gradient(#a4dfff, #d8efff, #ffffff);
 	border-radius:0 0 30px 30px;
 }
 
-footer{
-		visibility: hidden;
+.futer-desktop{
+	display:none
 	}
-
 
 @media(min-width:768px)
 {
@@ -789,12 +943,12 @@ footer{
 		margin-top: 0;
 	}
 	.body-iniciosesion section p:hover, .body-registro section p:hover {
-	color: #01363a;
-	background: linear-gradient(#a4dfff, #d8efff, #ffffff);
-	text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.50);
-	border-radius: 1000px;
+		color: #01363a;
+		background: linear-gradient(#a4dfff, #d8efff, #ffffff);
+		text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.50);
+		border-radius: 1000px;
 	}
-	footer{
-		visibility: visible;
+	.futer-desktop{
+		display: inherit;
 	}
 }
