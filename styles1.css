@@ -388,6 +388,7 @@ h2:hover{
 	padding-bottom: 1rem;
 }
 .article-card:hover{
+	transform: scale(1.05);
 	box-shadow: 0 4px 20px 0 rgba(34,68,123,0.2);
 	cursor:pointer;
 }
