@@ -541,7 +541,18 @@ footer p{
 	left:40px; 
 }
 
-
+@media screen and (min-width:1920px){
+	#lonuevo-mobile{
+	display: none;
+	}
+	.FApertura-mobile{
+		display: none;
+	}
+	.futer-mobile{
+		display: none;
+		visibility: hidden;
+	}
+}
 @media screen and (max-width:1920px){
 	#lonuevo-mobile{
 		display: none;
